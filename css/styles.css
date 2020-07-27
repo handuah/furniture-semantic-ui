@@ -1,0 +1,214 @@
+/* body::before{
+    content: "here";
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 5%;
+    height: 100%;
+    background-color: blue !important;
+} */
+
+
+/* BODY CSS */
+
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 20%;
+    height: 45%;
+    background-color: blue !important;
+}
+
+/* LEFT MENU CSS */
+#left-menu{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 5%;
+    height: 100%;
+    background-color: blue !important;
+}
+
+#left-menu > a{
+   padding: 23px;
+   width: inherit !important;
+   border-bottom: 3px transparent solid !important;
+  
+}
+
+#left-menu > a > i{
+    padding-left: 20px !important;
+    font-size: 15px;
+ }
+
+ /* vertical text sideways */
+
+.dtu-text{
+     writing-mode: vertical-rl !important;
+     text-orientation: mixed !important;
+    transform: rotate(180deg) !important;
+     color: white !important;
+     margin-left: 0px !important;
+     font-size: 0.9em;
+          
+ }
+
+ .dtu-text:hover{
+    color: khaki !important;
+    border-bottom: 2px yellow solid !important;
+ }
+
+
+ /* NAVBAR CSS */
+ #navbar{
+     position: relative;
+     left: 5%;
+     width: 95%;
+     padding: 10px;
+     background-color: transparent !important;
+     box-shadow: none;
+     border: none;
+ }
+
+ .right.menu> .button:nth-of-type(1){
+     background-color: blue !important;
+     color: white !important;
+     font-weight: bold !important;
+     text-align: center !important;
+     padding-left: 25px !important;
+     width: 100px;
+     border-radius: 0px;
+     border: 1px solid white !important;
+ }
+
+ .right.menu> .button:nth-of-type(1):hover{
+    background-color: rgba(255, 255, 255, 0.836) !important;
+    color: blue !important;
+    }
+
+ .right.menu> .button:nth-of-type(2){
+    background-color: white !important;
+    color: blue !important;
+    font-weight: bold !important;
+    text-align: center !important;
+     padding-left: 25px !important;
+     width: 100px;
+     border-radius: 0px;
+     
+}
+
+.right.menu> .button:nth-of-type(2):hover{
+    background-color: rgba(0, 0, 255, 0.863) !important;
+    color: white !important;
+    border: 1px solid white !important;
+    }
+
+/* IMAGE CSS */
+
+#image-placeholder{
+    position: fixed;
+    top: 18%;
+    right: 1.5%;
+    width: 65%;
+    height: 60%;
+    /* border: 3px solid red; */
+    z-index: 1;
+    background-image: url(../assets/images/sofa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#smaller-image-container{
+    position: absolute;
+    top: 90%;
+    left: 22%;
+    width: 55%;
+    height: 20%;
+    border: 3px solid green;
+    z-index: 4;
+}
+
+#smaller-image-container > #image-container1{
+    height: 100%;
+    width: 20%;
+    background-image: url(../assets/images/sofa2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 70;
+    margin-right: 2%;
+}
+
+
+/* DESCRIPTION CONTAINER CSS */
+#description-container{
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    box-shadow: -10px 10px 10px 2px rgba(128, 128, 128, 0.253);
+    width: 27%;
+    height: 40%;
+    padding: 2%;
+    z-index: 100;
+    background-color: white !important;
+}
+
+#description-container > h4{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: rgb(92, 3, 92) !important;
+}
+
+#description-container > p{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    /* color: rgb(92, 3, 92) !important; */
+}
+
+ /* BOTTOM CARDS CSS */
+#bottom-cards{
+    position: fixed;
+    bottom: 0%;
+    left: 5%;
+    width: 95%;
+    height: 10%;
+    background-color: brown !important;
+}
+
+
+/* MEDIA QUERIES */
+/* TABLETS */
+@media screen and ( min-width: 768px) and (max-width: 1023px){
+    #left-menu{
+        width: 7%;  
+    }
+    #bottom-cards{
+        left: 7%    ;
+        width: 93%;
+    }
+    
+}
+
+/*  SMARTPHONES */
+@media screen and ( max-width: 767px){
+    #left-menu > a{
+        padding: 15px;
+     }
+
+     .dtu-text{
+      margin-left: -9px !important;
+      font-size: 0.75em;
+                  
+    }
+
+    #left-menu > a > i{
+        padding-left: 10px !important;
+        font-size: small;
+        font-weight: 400 !important;
+       
+     }
+     
+}
+
