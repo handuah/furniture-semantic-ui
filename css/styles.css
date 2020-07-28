@@ -10,7 +10,9 @@
 
 
 /* BODY CSS */
-
+body{
+    background-color: rgba(240, 240, 240, 0.781) !important;
+}
 body::after{
     content: "";
     position: fixed;
@@ -121,25 +123,54 @@ body::after{
 }
 
 
-#smaller-image-container{
+#smaller-image-container1{
     position: absolute;
     top: 90%;
-    left: 22%;
-    width: 55%;
+    left: 24%;
+    width: 15%;
     height: 20%;
-    border: 3px solid green;
+    border: 2px solid white;
+    background-image: url(../assets/images/sofa3.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 4;
 }
 
-#smaller-image-container > #image-container1{
-    height: 100%;
-    width: 20%;
-    background-image: url(../assets/images/sofa2.jpg);
+#smaller-image-container2{
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    width: 15%;
+    height: 20%;
+    border: 2px solid white;
+    background-image: url(../assets/images/sofa4.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+}
+
+#smaller-image-container3{
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    width: 15%;
+    height: 20%;
+    border: 2px solid white;
+    background-image: url(../assets/images/sofa2.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+}
+
+/* #image-container1{
+    height: 100% !important;
+    width: 20% !important;
+    background-image: url(../assets/images/sofa3.jpg) !important;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 70;
     margin-right: 2%;
-}
+} */
 
 
 /* DESCRIPTION CONTAINER CSS */
@@ -167,6 +198,20 @@ body::after{
     /* color: rgb(92, 3, 92) !important; */
 }
 
+#description-container > .button:nth-of-type(1){
+    border-radius: 0px !important;
+    box-shadow: -5px 5px 20px 2px rgba(128, 128, 128, 0.253);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#description-container > .button:nth-of-type(1):hover{
+  background-color: rgba(128, 0, 128, 0.658);
+  color: black;
+}
+
+
+
  /* BOTTOM CARDS CSS */
 #bottom-cards{
     position: fixed;
@@ -174,7 +219,38 @@ body::after{
     left: 5%;
     width: 95%;
     height: 10%;
-    background-color: brown !important;
+    /* background-color: brown !important; */
+}
+
+#bottom-cards-container{
+    position: fixed;
+    left: 5%;
+    bottom: -2%;
+}
+
+#yellowcolumn{
+    width: 33%;
+    height: 100% !important;
+    background-color: rgba(31, 31, 31, 0.884);
+    padding: 2%;
+}
+#greencolumn{
+    width: 33%;
+    height: 100% !important;
+    background-color: brown;
+    padding: 2%;
+}
+#greycolumn{
+    width: 30%;
+    height: 100% !important;
+    background-color: purple;
+    padding: 1.3%;
+}
+
+#yellowcolumn, #greencolumn, #greycolumn{
+    color: white;
+    font-weight: bold;
+    /* font-size: 2em; */
 }
 
 
