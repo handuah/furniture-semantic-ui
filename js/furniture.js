@@ -22,4 +22,13 @@ $(document).ready(function(){
         mainImage.css('backgroundSize', 'cover');
         mainImage.css('transition', 'all 2s');
     });
+
+    // $('#next-button').click( () => {
+    //     firstImage.css('left', '14%'); 
+    //     secondImage.css('left', '30%'); 
+    //     thirdImage.css('left', '46%'); 
+    //     $('#prev-button').css('zIndex', '7');
+    // }
+
+    // );
 });
