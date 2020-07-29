@@ -120,6 +120,7 @@ body::after{
     background-image: url(../assets/images/sofa.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 
@@ -130,7 +131,7 @@ body::after{
     width: 15%;
     height: 20%;
     border: 2px solid white;
-    background-image: url(../assets/images/sofa3.jpg) !important;
+    background-image: url(../assets/images/sofa3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 4;
@@ -160,6 +161,12 @@ body::after{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 4;
+}
+
+#smaller-image-container1:hover,#smaller-image-container2:hover,#smaller-image-container3:hover{
+    transition: all 2s;
+    filter: sepia(90%) drop-shadow(5px 10px 10px rgba(128, 128, 128, 0.589));
+   
 }
 
 /* #image-container1{
